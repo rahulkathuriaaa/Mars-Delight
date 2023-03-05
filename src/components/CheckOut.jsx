@@ -5,12 +5,15 @@ import ABI from "../../Contracts/ABI.json"
 import web3modal from "web3modal"; 
 import { ethers } from "ethers";
 
+
+
 const CheckOut = () =>{
   async function getContract() {
     const modal = new web3modal(); 
-    const connection = await modal.connect()
-    const provider = new ethers.providers.Web3Provider(connection) 
 
+    const connection = await modal.connect()
+    const provider = new ethers.providers.Web3Provider(connection)
+    
     const signer = provider.getSigner()
 
     
