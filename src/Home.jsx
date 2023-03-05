@@ -1,4 +1,4 @@
-import { Billing, Business, Footer, Hero } from "./components";
+import { Billing, Business, CTA, Footer, Hero } from "./components";
 import Shop from "./components/Shop";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -21,6 +21,7 @@ useEffect(()=>{
            <Hero/>
             <Billing/>
             <Business/>
+            <CTA/>
           </div>
         </div>
         
